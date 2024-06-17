@@ -8,19 +8,19 @@ int main()
 {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
-	int size;
-	cout << "¬вед≥ть розм≥р масиву: ";
-	cin >> size;
-	int arr[3][3];
-	int num= 1;
-	for (int i = 0; i < size; ++i) {
-		for (int j = 0; j < size; ++j) {
+	int num;
+	cout << "¬вед≥ть число: ";
+	cin >> num;
+	int result = 1;
+	int arr[2][3];
+	for (int i = 0; i < 2; ++i) {
+		for (int j = 0; j < 3; ++j) {
 			arr[i][j] = num;
 			num*=2;
 		}
 	}
-	for (int i = 0; i < size; ++i) {
-		for (int j = 0; j < size; ++j) {
+	for (int i = 0; i < 2; ++i) {
+		for (int j = 0; j < 3; ++j) {
 			cout << arr[i][j] << "\t";
 		}
 		cout << endl;
